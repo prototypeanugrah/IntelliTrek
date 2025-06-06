@@ -49,7 +49,7 @@ The core logic is implemented as a directed graph using [LangGraph](https://gith
 ## Techniques Used
 - **Natural Language Understanding**: Uses LLMs (Anthropic Claude) to parse user intent and classify messages.
 - **Data Integration**: Combines trail data, Google Maps API (for geocoding and distance), and OpenWeather API.
-- **Similarity Ranking**: Uses feature vectors and cosine similarity to match user preferences with trail attributes.
+- **LLM-based DataFrame Agent**: Uses LangChain's `create_pandas_dataframe_agent` to rank and select trails based on user preferences and proximity.
 - **Conversational Graph**: Implements a stateful, multi-step conversation using LangGraph.
 - **Pandas DataFrame Manipulation**: For efficient trail filtering and ranking.
 
@@ -57,13 +57,11 @@ The core logic is implemented as a directed graph using [LangGraph](https://gith
 - **Python 3.10+**
 - **Streamlit**: For the interactive web UI
 - **LangGraph**: For graph-based conversational flow
-- **LangChain**: For LLM orchestration
+- **LangChain**: For LLM orchestration and DataFrame agent
 - **Anthropic Claude**: For language understanding and response generation
 - **Google Maps API**: For geocoding and distance calculations
 - **OpenWeather API**: For real-time weather data
-- **Pandas, NumPy, scikit-learn**: For data processing and similarity calculations
 - **Pydantic**: For data validation
-- **dotenv**: For environment variable management
 
 ## Applications & Use Cases
 - **Outdoor Enthusiasts**: Find the best trails for hiking, biking, birding, and more, tailored to current weather.
