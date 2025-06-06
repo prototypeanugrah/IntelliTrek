@@ -1,4 +1,4 @@
-# Trail & Weather Chatbot 🌲
+# IntelliTrek Chatbot 🌲
 
 ## Visual Examples
 
