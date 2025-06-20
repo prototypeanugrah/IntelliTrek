@@ -39,21 +39,6 @@ if "bot_state" not in st.session_state:
 
 # ──────────────────────────────  SIDEBAR  ────────────────────────────────
 with st.sidebar:
-    st.header("🔧 Settings")
-
-    # Allow the user to paste API keys without editing .env
-    openweather_key = st.text_input(
-        "OpenWeather API Key",
-        value=os.getenv("OPENWEATHER_API_KEY", ""),
-        type="password",
-    )
-    google_key = st.text_input(
-        "Google Maps API Key", value=os.getenv("GOOGLE_API_KEY", ""), type="password"
-    )
-    if st.button("💾 Save keys"):
-        os.environ["OPENWEATHER_API_KEY"] = openweather_key
-        os.environ["GOOGLE_API_KEY"] = google_key
-        st.success("Keys updated for this session.")
 
     st.markdown("---")
     if st.button("🧹 Clear chat history"):
