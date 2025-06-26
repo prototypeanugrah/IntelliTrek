@@ -4,13 +4,13 @@
 
 ### Streamlit Assistant Response
 
-![Streamlit Assistant Response](assets/assistant-response.png)
 *Example of the chatbot's response in the Streamlit web UI.*
+![Streamlit Assistant Response](assets/assistant-response.png)
 
 ### LangGraph Conversation Flow
 
-![LangGraph Graph Structure](assets/graph.png)
 *Graph structure of the conversation pipeline implemented with LangGraph.*
+![LangGraph Graph Structure](assets/graph.png)
 
 ## Project Description
 This project is an intelligent chatbot that helps users discover the best outdoor trails based on their location, preferred activities, and desired trail features, while also considering real-time weather conditions. By integrating trail data, Google Maps, and weather APIs, the chatbot provides personalized recommendations for outdoor adventures, ensuring both suitability and safety.
