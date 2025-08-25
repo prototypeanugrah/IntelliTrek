@@ -15,6 +15,27 @@
 ## Project Description
 This project is an intelligent chatbot that helps users discover the best outdoor trails based on their location, preferred activities, and desired trail features, while also considering real-time weather conditions. By integrating trail data, Google Maps, and weather APIs, the chatbot provides personalized recommendations for outdoor adventures, ensuring both suitability and safety.
 
+## How to Run
+1. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+2. Set up your `.env` file with your API keys:
+   ```env
+   OPENWEATHER_API_KEY=your_openweather_key
+   GOOGLE_API_KEY=your_google_maps_key
+   ```
+3. Run the Streamlit app:
+   ```bash
+   streamlit run st_app.py
+   ```
+
+## Example Conversation
+```
+User: I'm in Boston, MA and want to go hiking and see a waterfall.
+Assistant: [Recommends best trail, provides weather, and suggests alternatives.]
+```
+
 ## Goal
 The main goal is to assist users in finding the most suitable trails for their outdoor activities, factoring in:
 - Proximity to the user's location
@@ -68,27 +89,6 @@ The core logic is implemented as a directed graph using [LangGraph](https://gith
 - **Trip Planning**: Plan safe and enjoyable outdoor activities based on real-time conditions.
 - **Accessibility**: Discover trails with specific features (e.g., ADA accessible, dog-friendly, kid-friendly).
 - **Conversational Assistant**: Integrate as a chatbot in web or mobile apps for personalized outdoor recommendations.
-
-## How to Run
-1. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
-2. Set up your `.env` file with your API keys:
-   ```env
-   OPENWEATHER_API_KEY=your_openweather_key
-   GOOGLE_API_KEY=your_google_maps_key
-   ```
-3. Run the Streamlit app:
-   ```bash
-   streamlit run st_app.py
-   ```
-
-## Example Conversation
-```
-User: I'm in Boston, MA and want to go hiking and see a waterfall.
-Assistant: [Recommends best trail, provides weather, and suggests alternatives.]
-```
 
 ---
 
